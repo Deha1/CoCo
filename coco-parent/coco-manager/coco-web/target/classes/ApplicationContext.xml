@@ -70,7 +70,7 @@
     <!-- 用spring容器管理SqLSessionFacotry -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="mapperLocations" value="classpath*:com/xzy/mapper/**/*.xml" />
+        <property name="mapperLocations" value="classpath*:com/coco/mapper/**/*.xml" />
         <property name="configuration">
             <bean class="org.apache.ibatis.session.Configuration">
                 <property name="mapUnderscoreToCamelCase" value="true"/>
