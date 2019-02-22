@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.mapper.FootMapper">
+
+   <insert id="insertFoot" parameterType="com.coco.pojo.Foot" >
+            insert into co_foot(user_id,goods_id,create_time,update_time)
+            values(#{userId},#{goodsId},now(),now())
+   </insert>
+
+   <update id="updateFoot" parameterType="com.coco.pojo.Foot">
+            update co_foot set update_time=now() where goods_id=#{goodsId}
+   </update>
+
+   <delete id="deleteFoot" parameterType="int">
+          delete from co_foot where goods_id=#{#goodsId}
+   </delete>
+
+    <resultMap id="allFoot" type="com.coco.pojo.Foot">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="goods_id" property="goodsId"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+   <select id="findAllFootByUserId" resultMap="allFoot" parameterType="int">
+          select user_id,goods_id,create_time,update_time from co_foot where user_id=#{user_id}
+   </select>
+    <select id="findFootById" resultType="com.coco.pojo.Foot">
+          select id from co_foot where goods_id=#{goodsId} and user_id=#{userId}
+    </select>
+
+    <delete id="deleteAllFoot" parameterType="int" >
+        delete from co_foot where user_id=#{userId}
+    </delete>
+
+</mapper>
