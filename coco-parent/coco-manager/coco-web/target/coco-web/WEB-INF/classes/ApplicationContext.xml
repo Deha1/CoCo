@@ -16,7 +16,7 @@
 
     <aop:aspectj-autoproxy/>
     <context:annotation-config/>
-    <context:component-scan base-package="com.xzy.service.imp"/>
+    <context:component-scan base-package="com.coco.service.imp"/>
     <tx:annotation-driven transaction-manager="txManager"/>
 
     <!-- 加载配置属性文件 -->
@@ -25,7 +25,7 @@
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}" />
-        <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC" />
+        <property name="url" value="jdbc:mysql://localhost:3306/coco?serverTimezone=UTC" />
         <property name="username" value="root" />
         <property name="password" value="mysql" />
         <!-- 配置初始化大小、最小、最大 -->
@@ -70,7 +70,7 @@
     <!-- 用spring容器管理SqLSessionFacotry -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
-        <property name="mapperLocations" value="classpath*:com/xzy/mapper/**/*.xml" />
+        <property name="mapperLocations" value="com.coco.mapper.*.xml" />
         <property name="configuration">
             <bean class="org.apache.ibatis.session.Configuration">
                 <property name="mapUnderscoreToCamelCase" value="true"/>
@@ -80,7 +80,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.xzy.mapper"></property>
+        <property name="basePackage" value="com.coco.mapper"></property>
         <!--   <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>   -->
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>

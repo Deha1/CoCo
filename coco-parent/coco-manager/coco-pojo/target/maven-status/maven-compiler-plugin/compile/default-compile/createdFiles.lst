@@ -1,2 +1,11 @@
-com\xzy\pojo\Logs.class
-com\xzy\pojo\Users.class
+com\coco\pojo\ShopCar.class
+com\coco\pojo\UserInfo.class
+com\coco\pojo\Foot.class
+com\coco\pojo\Goods.class
+com\coco\pojo\Shop.class
+com\coco\pojo\Orders.class
+com\coco\pojo\GoodsKind.class
+com\coco\pojo\OrdersInfo.class
+com\coco\pojo\User.class
+com\coco\pojo\Address.class
+com\coco\pojo\GoodsPic.class

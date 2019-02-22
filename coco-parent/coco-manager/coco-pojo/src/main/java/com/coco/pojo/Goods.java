@@ -28,6 +28,8 @@ public class Goods {
 
     private String detail;
 
+    private GoodsPic goodsPic;
+
     public Goods(Integer id, Integer kindId, Integer shopId, String name, String subtitle, BigDecimal price, Integer num, Integer status, Integer topShow, Date createTime, Date updateTime, String detail) {
         this.id = id;
         this.kindId = kindId;
@@ -142,4 +144,5 @@ public class Goods {
     public void setDetail(String detail) {
         this.detail = detail == null ? null : detail.trim();
     }
+
 }

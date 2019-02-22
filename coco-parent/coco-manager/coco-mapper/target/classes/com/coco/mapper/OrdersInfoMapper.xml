@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.coco.dao.OrdersInfoMapper" >
+<mapper namespace="com.coco.mapper.OrdersInfoMapper" >
   <resultMap id="BaseResultMap" type="com.coco.pojo.OrdersInfo" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -152,4 +152,32 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+
+  <insert id="batchInsert" parameterType="list">
+  insert into co_orders_info(id, user_id, order_no,goods_id,
+  goods_name, goods_pic, goods_num,
+  total_price, create_time,
+  update_time)
+  values
+  <foreach collection="orderInfoList" index="index" item="item" separator=",">
+    (
+     #{item.id},#{item.userId},#{item.orderNo},#{item.goodsId},#{item.goodsName},#{item.goodsPic},#{item.goodsNum},#{item.totalPrice},now(),now()
+    )
+  </foreach>
+  </insert>
+
+  <select id="getByOrderNoUserId" parameterType="map" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    from co_orders_info
+    where order_no = #{orderNo}
+    and user_id = #{userId}
+  </select>
+  <select id="getByOrderNo" parameterType="map" resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    from co_ordesrs_info
+    where order_no = #{orderNo}
+  </select>
+
 </mapper>

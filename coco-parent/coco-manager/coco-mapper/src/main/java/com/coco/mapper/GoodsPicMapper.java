@@ -14,4 +14,6 @@ public interface GoodsPicMapper {
     int updateByPrimaryKeySelective(GoodsPic record);
 
     int updateByPrimaryKey(GoodsPic record);
+
+    String  findPic(Integer Id);
 }

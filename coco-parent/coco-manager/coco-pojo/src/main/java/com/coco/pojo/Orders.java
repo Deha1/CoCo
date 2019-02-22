@@ -18,7 +18,7 @@ public class Orders {
 
     private BigDecimal postage;
 
-    private String status;
+    private Integer status;
 
     private Date payTime;
 
@@ -30,7 +30,7 @@ public class Orders {
 
     private Date updateTime;
 
-    public Orders(Integer id, Long orderNo, Integer userId, Integer addressId, BigDecimal payment, Integer payType, BigDecimal postage, String status, Date payTime, Date sendTime, Date endTime, Date createTime, Date updateTime) {
+    public Orders(Integer id, Long orderNo, Integer userId, Integer addressId, BigDecimal payment, Integer payType, BigDecimal postage, Integer status, Date payTime, Date sendTime, Date endTime, Date createTime, Date updateTime) {
         this.id = id;
         this.orderNo = orderNo;
         this.userId = userId;
@@ -106,12 +106,12 @@ public class Orders {
         this.postage = postage;
     }
 
-    public String getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public Date getPayTime() {
