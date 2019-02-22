@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.mapper.UserInfoMapper">
+
+  <select id="findUserInfoById" resultType="com.coco.pojo.UserInfo" parameterType="int">
+        select * from co_user_info where user_id=#{user_id};
+    </select>
+  <insert id="InsertUserInfo" parameterType="int">
+      INSERT INTO co_user_info(id,create_time) VALUES(#{id},now())
+    </insert>
+
+  <update id="updateUserInfo" parameterType="map">
+    UPDATE co_user_info set
+    <if test="userName!=null">
+      user_name=#{userName},
+    </if>
+    <if test="userPic!=null">
+      user_pic=#{userPic},
+    </if>
+
+    <if test="sex!=0">
+      sex=#{sex},
+    </if>
+    <if test="phone!=null">
+      phone=#{phone},
+    </if>
+    <if test="brithday!=null">
+      userinfo.brithday=#{brithday},
+    </if>
+
+    <if test="mood!=null">
+      mood=#{mood},
+    </if>
+    <if test="updateTime==null">
+      update_time=now()
+    </if>
+    where id=#{id}
+  </update>
+
+
+</mapper>
+

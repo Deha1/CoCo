@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.mapper.GoodsMapper">
+
+  <select id="findGoodbyId" resultType="com.coco.pojo.Goods" parameterType="int">
+        select * from co_goods where shop_id=#{shop_id};
+    </select>
+
+    <select id="findshopId" resultType="com.coco.pojo.Goods" parameterType="Integer">
+        select * from co_goods where id=#{id};
+    </select>
+</mapper>
+
