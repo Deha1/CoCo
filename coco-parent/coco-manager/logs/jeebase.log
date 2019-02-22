@@ -1,17 +1,385 @@
-2019-02-12 20:27:05,962 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
-2019-02-12 20:27:06,009 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Tue Feb 12 20:27:06 GMT+08:00 2019]; root of context hierarchy
-2019-02-12 20:27:06,040 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
-2019-02-12 20:27:06,974 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-02-12 20:27:08,115 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
-2019-02-12 20:27:08,478 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2516 ms
-2019-02-12 20:27:08,494 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
-2019-02-12 20:27:08,494 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Tue Feb 12 20:27:08 GMT+08:00 2019]; parent: Root WebApplicationContext
-2019-02-12 20:27:08,494 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
-2019-02-12 20:27:08,588 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2019-02-12 20:27:08,713 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.xzy.controller.UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
-2019-02-12 20:27:08,713 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.xzy.controller.UserController.toregist()
-2019-02-12 20:27:08,775 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Tue Feb 12 20:27:08 GMT+08:00 2019]; parent: Root WebApplicationContext
-2019-02-12 20:27:08,806 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Tue Feb 12 20:27:08 GMT+08:00 2019]; parent: Root WebApplicationContext
-2019-02-12 20:27:08,869 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 375 ms
-2019-02-12 20:27:31,807 [http-bio-8080-exec-4] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
-2019-02-12 20:27:31,823 [http-bio-8080-exec-4] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-02-16 17:17:02,521 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-16 17:17:02,629 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sat Feb 16 17:17:02 CST 2019]; root of context hierarchy
+2019-02-16 17:17:02,681 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-16 17:17:03,252 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 17:17:03,969 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-16 17:17:04,330 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1806 ms
+2019-02-16 17:17:04,486 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-16 17:17:04,490 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:17:04 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:17:04,491 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-16 17:17:04,678 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 17:17:04,875 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(Users,org.springframework.ui.Model)
+2019-02-16 17:17:04,876 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-02-16 17:17:04,981 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:17:04 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:17:05,049 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:17:04 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:17:05,225 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 739 ms
+2019-02-16 17:17:45,340 [http-bio-8080-exec-5] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-02-16 17:17:45,395 [http-bio-8080-exec-5] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-02-16 17:19:41,562 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-16 17:19:41,616 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sat Feb 16 17:19:41 CST 2019]; root of context hierarchy
+2019-02-16 17:19:41,695 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-16 17:19:42,491 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 17:19:43,192 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-16 17:19:43,577 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2015 ms
+2019-02-16 17:19:43,993 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-16 17:19:44,003 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:19:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:19:44,004 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-16 17:19:44,251 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-16 17:19:44,906 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-02-16 17:19:44,907 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(Users,org.springframework.ui.Model)
+2019-02-16 17:19:45,211 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:19:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:19:45,347 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sat Feb 16 17:19:44 CST 2019]; parent: Root WebApplicationContext
+2019-02-16 17:19:45,684 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1690 ms
+2019-02-16 17:19:52,839 [http-bio-8080-exec-4] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2019-02-16 17:19:52,896 [http-bio-8080-exec-4] INFO  [org.springframework.jdbc.support.SQLErrorCodesFactory] - SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2019-02-17 17:26:57,146 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:26:57,240 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:26:57 CST 2019]; root of context hierarchy
+2019-02-17 17:26:57,293 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:26:57,819 [localhost-startStop-1] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.xzy.mapper]' package. Please check your configuration.
+2019-02-17 17:26:57,859 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:26:58,494 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:26:59,140 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1994 ms
+2019-02-17 17:26:59,308 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 17:26:59,308 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:26:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:26:59,308 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 17:26:59,471 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:26:59,723 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:26:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:26:59,771 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:26:59 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:26:59,864 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 556 ms
+2019-02-17 17:27:16,875 [http-bio-8080-exec-3] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/toregist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:30:33,017 [http-bio-8080-exec-5] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/toregist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:30:40,924 [http-bio-8080-exec-7] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/regist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:30:42,567 [http-bio-8080-exec-8] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/regist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:37:15,023 [http-bio-8080-exec-1] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/toregist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:38:27,592 [http-bio-8080-exec-4] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/toregist.htm] in DispatcherServlet with name 'app'
+2019-02-17 17:39:08,517 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:39:08,612 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:39:08 CST 2019]; root of context hierarchy
+2019-02-17 17:39:08,660 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:39:09,153 [localhost-startStop-1] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.xzy.mapper]' package. Please check your configuration.
+2019-02-17 17:39:09,207 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:39:09,836 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:39:10,493 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1975 ms
+2019-02-17 17:39:10,666 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 17:39:10,676 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:10,676 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 17:39:10,872 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:39:11,110 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.coco.controller.UserController.toregist()
+2019-02-17 17:39:11,110 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.coco.controller.UserController.regist(com.coco.pojo.Users,org.springframework.ui.Model)
+2019-02-17 17:39:11,273 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:11,411 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:10 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:11,581 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'guestService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-17 17:39:11,581 [localhost-startStop-1] ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'guestService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 31 more
+2019-02-17 17:39:44,539 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:39:44,759 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:39:44 CST 2019]; root of context hierarchy
+2019-02-17 17:39:44,897 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:39:45,526 [localhost-startStop-1] WARN  [org.mybatis.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.xzy.mapper]' package. Please check your configuration.
+2019-02-17 17:39:45,591 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:39:46,819 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:39:47,788 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 3248 ms
+2019-02-17 17:39:48,030 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 17:39:48,038 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:48,039 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 17:39:48,304 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:39:48,606 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.coco.controller.UserController.regist(com.coco.pojo.Users,org.springframework.ui.Model)
+2019-02-17 17:39:48,607 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.coco.controller.UserController.toregist()
+2019-02-17 17:39:48,714 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:48,777 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:39:48 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:39:48,880 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'guestService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-02-17 17:39:48,881 [localhost-startStop-1] ERROR [org.springframework.web.servlet.DispatcherServlet] - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'guestService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.coco.service.GuestService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 31 more
+2019-02-17 17:42:03,776 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:42:03,852 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:42:03 CST 2019]; root of context hierarchy
+2019-02-17 17:42:03,897 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:42:04,567 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:42:05,318 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:42:05,937 [localhost-startStop-1] ERROR [org.mybatis.spring.mapper.MapperFactoryBean] - Error while adding the mapper 'interface com.coco.mapper.AddressMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 30 more
+2019-02-17 17:42:05,943 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressMapper' defined in URL [jar:file:/D:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/coco/mapper/AddressMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+2019-02-17 17:42:05,951 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-02-17 17:42:05,954 [localhost-startStop-1] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressMapper' defined in URL [jar:file:/D:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/coco/mapper/AddressMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 24 more
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 30 more
+2019-02-17 17:43:51,049 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:43:51,152 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:43:51 CST 2019]; root of context hierarchy
+2019-02-17 17:43:51,220 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:43:51,811 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:43:52,513 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:43:53,033 [localhost-startStop-1] ERROR [org.mybatis.spring.mapper.MapperFactoryBean] - Error while adding the mapper 'interface com.coco.mapper.AddressMapper' to configuration.
+org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 30 more
+2019-02-17 17:43:53,039 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressMapper' defined in URL [jar:file:/D:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/coco/mapper/AddressMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+2019-02-17 17:43:53,043 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-02-17 17:43:53,046 [localhost-startStop-1] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'addressMapper' defined in URL [jar:file:/D:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/coco/mapper/AddressMapper.class]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:742)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.lang.IllegalArgumentException: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:83)
+	at org.springframework.dao.support.DaoSupport.afterPropertiesSet(DaoSupport.java:44)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 21 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.loadXmlResource(MapperAnnotationBuilder.java:173)
+	at org.apache.ibatis.builder.annotation.MapperAnnotationBuilder.parse(MapperAnnotationBuilder.java:124)
+	at org.apache.ibatis.binding.MapperRegistry.addMapper(MapperRegistry.java:72)
+	at org.apache.ibatis.session.Configuration.addMapper(Configuration.java:741)
+	at org.mybatis.spring.mapper.MapperFactoryBean.checkDaoConfig(MapperFactoryBean.java:80)
+	... 24 more
+Caused by: org.apache.ibatis.builder.BuilderException: Wrong namespace. Expected 'com.coco.mapper.AddressMapper' but found 'com.coco.dao.AddressMapper'.
+	at org.apache.ibatis.builder.MapperBuilderAssistant.setCurrentNamespace(MapperBuilderAssistant.java:78)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:112)
+	... 30 more
+2019-02-17 17:57:12,059 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:57:12,159 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:57:12 CST 2019]; root of context hierarchy
+2019-02-17 17:57:12,206 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:57:12,770 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:57:13,439 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:57:14,100 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2041 ms
+2019-02-17 17:57:14,270 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 17:57:14,270 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:57:14 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:57:14,270 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 17:57:14,417 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:57:14,668 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.coco.controller.UserController.toregist()
+2019-02-17 17:57:14,669 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.coco.controller.UserController.regist(com.coco.pojo.Users,org.springframework.ui.Model)
+2019-02-17 17:57:14,739 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:57:14 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:57:14,786 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:57:14 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:57:14,947 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 677 ms
+2019-02-17 17:58:22,419 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 17:58:22,512 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 17:58:22 CST 2019]; root of context hierarchy
+2019-02-17 17:58:22,600 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 17:58:23,164 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:58:23,797 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 17:58:24,382 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 1963 ms
+2019-02-17 17:58:24,567 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 17:58:24,567 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:58:24 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:58:24,567 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 17:58:24,736 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 17:58:24,984 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.coco.controller.UserController.regist(com.coco.pojo.Users,org.springframework.ui.Model)
+2019-02-17 17:58:24,984 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.coco.controller.UserController.toregist()
+2019-02-17 17:58:25,053 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:58:24 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:58:25,100 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 17:58:24 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 17:58:25,231 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 664 ms
+2019-02-17 19:40:28,437 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-02-17 19:40:28,551 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Sun Feb 17 19:40:28 CST 2019]; root of context hierarchy
+2019-02-17 19:40:28,596 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-02-17 19:40:29,427 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 19:40:30,518 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-02-17 19:40:31,811 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 3373 ms
+2019-02-17 19:40:32,117 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-02-17 19:40:32,128 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 19:40:32 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 19:40:32,130 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-02-17 19:40:32,400 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-02-17 19:40:32,862 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String com.coco.controller.UserController.regist(com.coco.pojo.Users,org.springframework.ui.Model)
+2019-02-17 19:40:32,865 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String com.coco.controller.UserController.toregist()
+2019-02-17 19:40:33,067 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 19:40:32 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 19:40:33,252 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Sun Feb 17 19:40:32 CST 2019]; parent: Root WebApplicationContext
+2019-02-17 19:40:33,577 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1459 ms

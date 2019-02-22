@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.coco.mapper.LogsMapper">
+
+    <insert id="addMsg" parameterType="com.coco.pojo.Logs">
+  insert into logs(msg)
+  values(#{msg})
+  </insert>
+
+</mapper>

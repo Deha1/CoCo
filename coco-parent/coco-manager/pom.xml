@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>coco-parent</artifactId>
-        <groupId>com.xzy</groupId>
+        <groupId>com.coco</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -16,14 +16,14 @@
 
 
         <dependency>
-            <groupId>com.xzy</groupId>
+            <groupId>com.coco </groupId>
             <artifactId>coco-common</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <build>
         <!-- 配置插件 -->
-        <plugins>
+        <!--<plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -32,7 +32,7 @@
                     <path>/</path>
                 </configuration>
             </plugin>
-        </plugins>
+        </plugins>-->
     </build>
     <modules>
         <module>coco-web</module>
