@@ -1,9 +1,10 @@
 package com.coco.controller;
 
 import com.coco.common.ServerResponse;
-import com.coco.pojo.Goods;
-import com.coco.pojo.ShopCar;
-import com.coco.pojo.User;
+import com.coco.common.vo.FindmyShopCar;
+import com.coco.common.vo.FindmyShopCarList;
+import com.coco.pojo.*;
+import com.coco.service.GoodPicService;
 import com.coco.service.GoodsService;
 import com.coco.service.ShopCarService;
 import com.coco.service.ShopService;
@@ -15,33 +16,61 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 public class ShopCarController {
     @Autowired
-    ShopCarService shopCarService;
+   private ShopCarService shopCarService;
     @Autowired
-    GoodsService goodsService;
+   private GoodsService goodsService;
     @Autowired
-    ShopService shopService;
+    private ShopService shopService;
+    @Autowired
+    private GoodPicService goodPicService;
 
     @ResponseBody
     @RequestMapping("/findmyshopcar.do")
     public ServerResponse myShopCar(HttpSession session){
+        //User user1=new User();
+         //user1.setId(10);
+        // session.setAttribute("user",user1);
 
-        User user=(User) session.getAttribute("user");
+         User user=(User) session.getAttribute("user");
         if(user==null){
             System.out.println(ServerResponse.createByErrorMessage("用户未登录"));
             return ServerResponse.createByErrorMessage("用户未登录");
         }
         int useId=user.getId();
         List<ShopCar> shopCars=shopCarService.personShopCar(useId);
+        List<FindmyShopCar> findmyShopCars=new ArrayList<>();
         for (ShopCar shopcar:shopCars) {
-            System.out.println(shopcar.toString());
+            GoodsPic goodsPic=goodPicService.findshopId(shopcar.getGoodsId());
+            Goods goods=goodsService.findshopId(shopcar.getGoodsId());
+           String goodName=goods.getName();
+           Shop shop=shopService.findShopByGoodId(goods.getShopId());
+           String shopName=shop.getShopName();
+
+            FindmyShopCar findmyShopCar=new FindmyShopCar();
+            findmyShopCar.setId(shopcar.getId());
+            findmyShopCar.setGoodsId(shopcar.getGoodsId());
+            findmyShopCar.setPic(goodsPic.getUrl());
+            findmyShopCar.setNum(shopcar.getNum());
+            findmyShopCar.setShopName(shopName);
+            findmyShopCar.setGoodName(goodName);
+            findmyShopCars.add(findmyShopCar);
+
+           //System.out.println(shopcar.toString()+"--"+shopName+"---"+goodName);
+            System.out.println("给前端的"+findmyShopCar.toString());
+           // System.out.println(shopcar.toString());
         }
-        System.out.println(ServerResponse.createBySuccess(shopCars));
-        return ServerResponse.createBySuccess(shopCars);
+
+        FindmyShopCarList list=new FindmyShopCarList();
+        list.setShopCarList(findmyShopCars);
+
+       System.out.println(ServerResponse.createBySuccess(list));
+        return ServerResponse.createBySuccess(list);
     }
 
 
@@ -151,4 +180,43 @@ public class ShopCarController {
         shopCarService.deleteAllShopCarByUserId(user.getId());
         System.out.println(ServerResponse.createBySuccessMessage("删除成功"));
         return ServerResponse.createBySuccessMessage("删除成功");
-    }}
+    }
+    @ResponseBody
+    @RequestMapping("/changecheckon.do")
+    public ServerResponse ChangeCheckedON(HttpSession session,@RequestParam("id") int id){
+
+        User user1=new User();
+        user1.setId(10);
+         session.setAttribute("user",user1);
+
+        User user=(User)session.getAttribute("user");
+        if(user==null){
+            System.out.println(ServerResponse.createByErrorMessage("用户未登录"));
+            return ServerResponse.createByErrorMessage("用户未登录");
+        }
+
+        shopCarService.ChangeStatueShopCarOn(id);
+        System.out.println(ServerResponse.createBySuccessMessage("更新成功"));
+        return ServerResponse.createBySuccessMessage("更新成功");
+    }
+
+    @ResponseBody
+    @RequestMapping("/changecheckoff.do")
+    public ServerResponse ChangeCheckedOFF(HttpSession session,@RequestParam("id") int id){
+
+        //User user1=new User();
+        //user1.setId(10);
+         //session.setAttribute("user",user1);
+
+        User user=(User)session.getAttribute("user");
+        if(user==null){
+            System.out.println(ServerResponse.createByErrorMessage("用户未登录"));
+            return ServerResponse.createByErrorMessage("用户未登录");
+        }
+
+        shopCarService.ChangeStatueShopCarOff(id);
+        System.out.println(ServerResponse.createBySuccessMessage("更新成功"));
+        return ServerResponse.createBySuccessMessage("更新成功");
+    }
+
+}

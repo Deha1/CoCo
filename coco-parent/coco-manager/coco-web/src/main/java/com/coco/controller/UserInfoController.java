@@ -46,9 +46,9 @@ public class UserInfoController {
     @RequestMapping("/userinfoUpdate.do")
     public ServerResponse good1(UserInfo userInfo, HttpSession session){
 
-        User user1=new User();
-        user1.setId(1);
-        session.setAttribute("user",user1);
+//        User user1=new User();
+//        user1.setId(10);
+//        session.setAttribute("user",user1);
         User user=(User) session.getAttribute("user");
         if(user==null){
             System.out.println(ServerResponse.createByErrorMessage("用户未登录"));

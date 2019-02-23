@@ -11,10 +11,16 @@ import java.util.List;
 @Service
 public class ShopServiceImp implements ShopService {
     @Autowired
-    ShopMapper shopMapper;
+    private ShopMapper shopMapper;
     @Override
     public List<Shop> findShop() {
         List<Shop> shops=shopMapper.findAllShop();
-        return shopMapper.findAllShop();
+        return shops;
+    }
+
+    @Override
+    public Shop findShopByGoodId(int id) {
+        Shop shop=shopMapper.findShopbyGoodsId(id);
+        return shop;
     }
 }

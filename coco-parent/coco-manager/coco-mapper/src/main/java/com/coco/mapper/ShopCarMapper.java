@@ -21,4 +21,8 @@ public interface ShopCarMapper {
 
     //批量删除购物车
     public void deleteAllShopCarByUserId(int userId);
+    //选中状态
+    public void ChangeStatueShopCarOn(int id);
+    //未选中状态
+    public void ChangeStatueShopCarOff(int id);
 }

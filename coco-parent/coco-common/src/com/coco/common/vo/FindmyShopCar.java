@@ -1,50 +1,76 @@
 package com.coco.common.vo;
 
 public class FindmyShopCar {
+    private Integer id;
 
-    String a0="http://coco-parent.oss-cn-beijing.aliyuncs.com/a0.jpg";
-    String a1="http://coco-parent.oss-cn-beijing.aliyuncs.com/a1.jpg";
-    String a2="http://coco-parent.oss-cn-beijing.aliyuncs.com/a2.jpg";
-    String a3="http://coco-parent.oss-cn-beijing.aliyuncs.com/a3.jpg";
-    String a4="http://coco-parent.oss-cn-beijing.aliyuncs.com/a4.jpg";
-    String a5="http://coco-parent.oss-cn-beijing.aliyuncs.com/a5.jpg";
+    private Integer goodsId;
 
+    private Integer num;
 
-    public String getA0() {
-        return a0;
+    private String pic;
+
+    private String shopName;
+
+    private String goodName;
+
+    public Integer getId() {
+        return id;
     }
 
-    public String getA1() {
-        return a1;
-    }
-
-    public String getA2() {
-        return a2;
-    }
-
-    public String getA3() {
-        return a3;
-    }
-
-    public String getA4() {
-        return a4;
-    }
-
-    public String getA5() {
-        return a5;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
 
+    public Integer getGoodsId() {
+        return goodsId;
+    }
+
+    public void setGoodsId(Integer goodsId) {
+        this.goodsId = goodsId;
+    }
+
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setNum(Integer num) {
+        this.num = num;
+    }
+
+    public String getShopName() {
+        return shopName;
+    }
+
+    public void setShopName(String shopName) {
+        this.shopName = shopName;
+    }
+
+    public String getGoodName() {
+        return goodName;
+    }
+
+    public void setGoodName(String goodName) {
+        this.goodName = goodName;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
 
     @Override
     public String toString() {
         return "FindmyShopCar{" +
-                "a0='" + a0 + '\'' +
-                ", a1='" + a1 + '\'' +
-                ", a2='" + a2 + '\'' +
-                ", a3='" + a3 + '\'' +
-                ", a4='" + a4 + '\'' +
-                ", a5='" + a5 + '\'' +
+                "id=" + id +
+                ", goodsId=" + goodsId +
+                ", num=" + num +
+                ", pic='" + pic + '\'' +
+                ", shopName='" + shopName + '\'' +
+                ", goodName='" + goodName + '\'' +
                 '}';
     }
 }

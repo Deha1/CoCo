@@ -99,4 +99,14 @@ public class ShopCarServiceImp implements ShopCarService {
         ShopCar shopCar=shopCarMapper.findaShopCar(goodsId,shopId,userId);
         return shopCar;
     }
+
+    @Override
+    public void ChangeStatueShopCarOn(int id) {
+        shopCarMapper.ChangeStatueShopCarOn(id);
+    }
+
+    @Override
+    public void ChangeStatueShopCarOff(int id) {
+        shopCarMapper.ChangeStatueShopCarOff(id);
+    }
 }

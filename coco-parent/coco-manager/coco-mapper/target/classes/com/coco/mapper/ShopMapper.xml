@@ -7,5 +7,9 @@
   <select id="findAllShop" resultType="com.coco.pojo.Shop">
         select * from co_shop;
     </select>
+
+    <select id="findShopbyGoodsId" resultType="com.coco.pojo.Shop" parameterType="int">
+        select * from co_shop where id=#{id};
+    </select>
 </mapper>
 

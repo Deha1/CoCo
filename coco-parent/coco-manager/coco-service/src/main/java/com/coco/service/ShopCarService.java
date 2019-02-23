@@ -13,4 +13,8 @@ public interface ShopCarService {
     public void deleteAllShopCarByUserId(int userId);
     public ShopCar findaShopCar(int goodsId, int shopId, int userId);
 
+    public void ChangeStatueShopCarOn(int id);
+    //未选中状态
+    public void ChangeStatueShopCarOff(int id);
+
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserInfoServiceImp implements UserInfoService {
     @Autowired
-    UserInfoMapper userInfoMapper;
+    private UserInfoMapper userInfoMapper;
     @Override
     public UserInfo findUserInfo(int id) {
         UserInfo userInfo=userInfoMapper.findUserInfoById(id);

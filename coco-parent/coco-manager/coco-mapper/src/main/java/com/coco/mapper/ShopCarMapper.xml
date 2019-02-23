@@ -32,4 +32,11 @@
     <select id="findaShopCar" resultType="com.coco.pojo.ShopCar" parameterType="map" >
         select * from co_shop_car where goods_id=#{goodsId} and shop_id=#{shopId} and user_id=#{userId};
     </select>
+    <update id="ChangeStatueShopCarOn" parameterType="int">
+        update co_shop_car set checked=1 where id=#{id};
+    </update>
+
+    <update id="ChangeStatueShopCarOff" parameterType="int">
+        update co_shop_car set checked=0 where id=#{id};
+    </update>
 </mapper>

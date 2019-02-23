@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ShopService {
     public List<Shop> findShop();
+
+    public Shop findShopByGoodId(int id);
 }
