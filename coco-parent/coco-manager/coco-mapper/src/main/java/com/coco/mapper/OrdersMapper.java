@@ -22,5 +22,8 @@ public interface OrdersMapper {
 
     List<Orders> selectByUserId(Integer userId);
 
+    List<Orders> selectByUserIdNoPay(Integer userId);
+
+    List<Orders> selectByUserIdPay(Integer userId);
 
 }

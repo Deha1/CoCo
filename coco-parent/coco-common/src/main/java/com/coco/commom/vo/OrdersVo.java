@@ -55,7 +55,6 @@ public class OrdersVo {
 
     private String pic;
 
-
     public Long getOrderNo() {
         return orderNo;
     }

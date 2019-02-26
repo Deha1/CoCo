@@ -203,5 +203,21 @@
     where user_id = #{userId}
     order by create_time desc
   </select>
+  <select id="selectByUserIdNoPay" resultMap="BaseResultMap" parameterType="int">
+    SELECT
+    <include refid="Base_Column_List"/>
+    from co_orders
+    where user_id = #{userId}
+    and status=10
+    order by create_time desc
+  </select>
+  <select id="selectByUserIdPay" resultMap="BaseResultMap" parameterType="int">
+    SELECT
+    <include refid="Base_Column_List"/>
+    from co_orders
+    where user_id = #{userId}
+    and status=20
+    order by create_time desc
+  </select>
 
 </mapper>

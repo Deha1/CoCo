@@ -14,9 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 @Service("ordersService")
 public class OrdersServiceImp implements OrdersService {
@@ -51,6 +49,7 @@ public class OrdersServiceImp implements OrdersService {
         BigDecimal payment = this.getOrderTotalPrice(orderInfoList);
 
         Address address = addressMapper.selectByPrimaryKey(userId);
+
         //生成订单
         Orders orders = this.assembleOrder(userId,address.getId(),payment);
         if (orders == null) {
@@ -108,6 +107,44 @@ public class OrdersServiceImp implements OrdersService {
         return ServerResponse.createBySuccess(ordersVoList);
     }
 
+    //查看未付款订单  包含已超时
+    public ServerResponse getOrderListNoPay(Integer userId){
+
+        List<Orders> ordersList = ordersMapper.selectByUserIdNoPay(userId);
+        List<Orders> ordersList1 = Lists.newArrayList();
+        for (Orders orders: ordersList
+             ) {
+            Calendar dateOne=Calendar.getInstance();
+            Calendar dateTwo=Calendar.getInstance();
+            dateOne.setTime(new Date());    //设置为当前系统时间
+            dateTwo.setTime(orders.getCreateTime());    //获取数据库中的时间
+            long timeOne=dateOne.getTimeInMillis();
+            long timeTwo=dateTwo.getTimeInMillis();
+            long minute=(timeOne-timeTwo)/(1000*60);//转化minute
+            //判断账户锁定时间是否大于30分钟
+            if(minute>30){
+                orders.setStatus(30);
+                ordersList1.add(orders);
+            }
+            else{
+                ordersList1.add(orders);
+            }
+        }
+        List<OrdersVo> ordersVoList = assembleOrderVoList(ordersList1,userId);
+
+        return ServerResponse.createBySuccess(ordersVoList);
+    }
+
+    //查看已付款订单
+    public ServerResponse getOrderListPay(Integer userId){
+
+        List<Orders> ordersList = ordersMapper.selectByUserIdPay(userId);
+
+        List<OrdersVo> ordersVoList = assembleOrderVoList(ordersList,userId);
+
+        return ServerResponse.createBySuccess(ordersVoList);
+    }
+
     private List<OrdersVo> assembleOrderVoList(List<Orders> orderList,Integer userId){
         List<OrdersVo> orderVoList = Lists.newArrayList();
         for(Orders orders : orderList){
@@ -130,6 +167,8 @@ public class OrdersServiceImp implements OrdersService {
         }
         return  ServerResponse.createByErrorMessage("没有找到该订单");
     }
+
+
 
 
     //检查购物车中商品，看是否可以提交订单，如果能先操作OrderInfo表再返回
@@ -246,10 +285,10 @@ public class OrdersServiceImp implements OrdersService {
             ordersVo.setAddressVo(assembleAddressVo(address));
         }
 
-        ordersVo.setPayTime(new Date());
-        ordersVo.setSendTime(new Date());
-        ordersVo.setEndTime(new Date());
-        ordersVo.setCreateTime(new Date());
+        ordersVo.setPayTime(orders.getPayTime());
+        ordersVo.setSendTime(orders.getSendTime());
+        ordersVo.setEndTime(orders.getEndTime());
+        ordersVo.setCreateTime(orders.getCreateTime());
 
 
 

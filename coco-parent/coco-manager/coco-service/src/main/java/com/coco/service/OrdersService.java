@@ -9,5 +9,8 @@ public interface OrdersService {
     ServerResponse<String> cancel(Integer userId,Long orderNo);
     ServerResponse<OrdersVo> getOrderDetail(Integer userId, Long orderNo);
     ServerResponse getOrderList(Integer userId);
+    ServerResponse getOrderListNoPay(Integer userId);
+    ServerResponse getOrderListPay(Integer userId);
+
 
 }
