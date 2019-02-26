@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.coco.mapper.ShopMapper" >
+  <resultMap id="BaseResultMap" type="com.coco.pojo.Shop" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="shop_name" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="shop_dis" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="shop_pic" jdbcType="VARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, shop_name, shop_dis, shop_pic
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from co_shop
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from co_shop
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.coco.pojo.Shop" >
+    insert into co_shop (id, shop_name, shop_dis, 
+      shop_pic)
+    values (#{id,jdbcType=INTEGER}, #{shopName,jdbcType=VARCHAR}, #{shopDis,jdbcType=VARCHAR}, 
+      #{shopPic,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.coco.pojo.Shop" >
+    insert into co_shop
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="shopName != null" >
+        shop_name,
+      </if>
+      <if test="shopDis != null" >
+        shop_dis,
+      </if>
+      <if test="shopPic != null" >
+        shop_pic,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="shopName != null" >
+        #{shopName,jdbcType=VARCHAR},
+      </if>
+      <if test="shopDis != null" >
+        #{shopDis,jdbcType=VARCHAR},
+      </if>
+      <if test="shopPic != null" >
+        #{shopPic,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.coco.pojo.Shop" >
+    update co_shop
+    <set >
+      <if test="shopName != null" >
+        shop_name = #{shopName,jdbcType=VARCHAR},
+      </if>
+      <if test="shopDis != null" >
+        shop_dis = #{shopDis,jdbcType=VARCHAR},
+      </if>
+      <if test="shopPic != null" >
+        shop_pic = #{shopPic,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.coco.pojo.Shop" >
+    update co_shop
+    set shop_name = #{shopName,jdbcType=VARCHAR},
+      shop_dis = #{shopDis,jdbcType=VARCHAR},
+      shop_pic = #{shopPic,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

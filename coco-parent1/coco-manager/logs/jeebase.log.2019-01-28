@@ -1,0 +1,347 @@
+2019-01-28 12:16:19,380 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:16:19,488 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:16:19 CST 2019]; root of context hierarchy
+2019-01-28 12:16:19,579 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:16:20,284 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:16:21,180 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:16:21,631 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2250 ms
+2019-01-28 12:16:22,112 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-01-28 12:16:22,117 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:16:22 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:16:22,118 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-01-28 12:16:22,345 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:16:22,756 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
+2019-01-28 12:16:22,758 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-01-28 12:16:22,911 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:16:22 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:16:23,045 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:16:22 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:16:23,291 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1179 ms
+2019-01-28 12:18:45,669 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:18:45,841 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:18:45 CST 2019]; root of context hierarchy
+2019-01-28 12:18:45,967 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:18:46,795 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:18:47,793 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:18:48,144 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2475 ms
+2019-01-28 12:18:48,421 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-01-28 12:18:48,439 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:18:48 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:18:48,441 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-01-28 12:18:48,674 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:18:49,035 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
+2019-01-28 12:18:49,036 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-01-28 12:18:49,179 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:18:48 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:18:49,290 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:18:48 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:18:49,522 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1101 ms
+2019-01-28 12:23:48,742 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:23:48,877 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:23:48 CST 2019]; root of context hierarchy
+2019-01-28 12:23:49,012 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:23:49,723 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:23:50,684 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:23:50,939 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+2019-01-28 12:23:50,946 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-01-28 12:23:50,954 [localhost-startStop-1] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 44 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 49 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 55 more
+2019-01-28 12:28:56,291 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:28:56,453 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:28:56 CST 2019]; root of context hierarchy
+2019-01-28 12:28:56,589 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:28:57,455 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:28:58,780 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:28:59,097 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+2019-01-28 12:28:59,101 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-01-28 12:28:59,104 [localhost-startStop-1] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 44 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 49 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 55 more
+2019-01-28 12:35:27,017 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:35:27,141 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:35:27 CST 2019]; root of context hierarchy
+2019-01-28 12:35:27,246 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:35:28,166 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:35:29,109 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:35:29,415 [localhost-startStop-1] WARN  [org.springframework.web.context.support.XmlWebApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+2019-01-28 12:35:29,420 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} closed
+2019-01-28 12:35:29,423 [localhost-startStop-1] ERROR [org.springframework.web.context.ContextLoader] - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'guestServiceImp': Unsatisfied dependency expressed through field 'logsMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:588)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:443)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:325)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'logsMapper' defined in URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:359)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:108)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1531)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1276)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:585)
+	... 24 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [ApplicationContext.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:351)
+	... 37 more
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'URL [jar:file:/E:/repository/com/xzy/coco-mapper/1.0-SNAPSHOT/coco-mapper-1.0-SNAPSHOT.jar!/com/xzy/mapper/LogsMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 44 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+	... 47 more
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118)
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128)
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118)
+	... 49 more
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.ssm.pojo.Logs'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120)
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149)
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116)
+	... 53 more
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.ssm.pojo.Logs
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200)
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89)
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261)
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116)
+	... 55 more
+2019-01-28 12:45:14,179 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:45:14,355 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:45:14 CST 2019]; root of context hierarchy
+2019-01-28 12:45:14,487 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:45:15,194 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:45:16,380 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:45:16,985 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2805 ms
+2019-01-28 12:45:17,273 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-01-28 12:45:17,277 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:45:17 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:45:17,279 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-01-28 12:45:17,470 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:45:17,831 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
+2019-01-28 12:45:17,833 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-01-28 12:45:17,990 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:45:17 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:45:18,079 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:45:17 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:45:18,322 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1049 ms
+2019-01-28 12:49:22,048 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 12:49:22,180 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 12:49:22 CST 2019]; root of context hierarchy
+2019-01-28 12:49:22,322 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 12:49:23,010 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:49:23,871 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 12:49:24,373 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2324 ms
+2019-01-28 12:49:24,683 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-01-28 12:49:24,692 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:49:24 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:49:24,693 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-01-28 12:49:24,939 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 12:49:25,272 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
+2019-01-28 12:49:25,273 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-01-28 12:49:25,391 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:49:24 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:49:25,461 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 12:49:24 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 12:49:25,690 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 1007 ms
+2019-01-28 14:06:48,870 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 14:06:49,048 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 14:06:49 CST 2019]; root of context hierarchy
+2019-01-28 14:06:49,138 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 14:06:49,946 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 14:06:51,131 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 14:07:12,703 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization started
+2019-01-28 14:07:12,849 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing Root WebApplicationContext: startup date [Mon Jan 28 14:07:12 CST 2019]; root of context hierarchy
+2019-01-28 14:07:12,974 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [ApplicationContext.xml]
+2019-01-28 14:07:13,813 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 14:07:14,948 [localhost-startStop-1] INFO  [com.alibaba.druid.pool.DruidDataSource] - {dataSource-1} inited
+2019-01-28 14:07:15,501 [localhost-startStop-1] INFO  [org.springframework.web.context.ContextLoader] - Root WebApplicationContext: initialization completed in 2794 ms
+2019-01-28 14:07:15,783 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization started
+2019-01-28 14:07:15,787 [localhost-startStop-1] INFO  [org.springframework.web.context.support.XmlWebApplicationContext] - Refreshing WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 14:07:15 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 14:07:15,789 [localhost-startStop-1] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from ServletContext resource [/WEB-INF/app-servlet.xml]
+2019-01-28 14:07:15,987 [localhost-startStop-1] INFO  [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-01-28 14:07:16,311 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/regist.htm]}" onto public java.lang.String UserController.regist(com.xzy.pojo.Users,org.springframework.ui.Model)
+2019-01-28 14:07:16,312 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping] - Mapped "{[/toregist.htm]}" onto public java.lang.String UserController.toregist()
+2019-01-28 14:07:16,415 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 14:07:15 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 14:07:16,480 [localhost-startStop-1] INFO  [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter] - Looking for @ControllerAdvice: WebApplicationContext for namespace 'app-servlet': startup date [Mon Jan 28 14:07:15 CST 2019]; parent: Root WebApplicationContext
+2019-01-28 14:07:16,666 [localhost-startStop-1] INFO  [org.springframework.web.servlet.DispatcherServlet] - FrameworkServlet 'app': initialization completed in 883 ms
