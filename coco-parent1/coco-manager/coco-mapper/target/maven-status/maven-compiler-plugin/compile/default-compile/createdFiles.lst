@@ -1,0 +1,13 @@
+com\coco\mapper\GoodsMapper.class
+com\coco\mapper\UserInfoMapper.class
+com\coco\mapper\AddressMapper.class
+com\coco\mapper\UserMapper.class
+com\coco\mapper\OrdersInfoMapper.class
+com\xzy\mapper\LogsMapper.class
+com\coco\mapper\ShopCarMapper.class
+com\coco\mapper\ShopMapper.class
+com\coco\mapper\GoodsKindMapper.class
+com\coco\mapper\OrdersMapper.class
+com\xzy\mapper\UsersMapper.class
+com\coco\mapper\GoodsPicMapper.class
+com\coco\mapper\FootMapper.class
