@@ -1,26 +1,40 @@
 package com.coco.pojo;
 
+import org.hibernate.validator.constraints.Length;
+
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class Address {
     private Integer id;
 
+    @NotNull(message="用户名不能为空")
+
     private Integer userId;
 
+    @NotNull(message="收货人不能为空")
     private String receiverUsername;
 
+    @NotNull(message="电话号码不能为空")
+    @Length(min=11, max=11, message = "手机号长度必须为11位")
     private String receiverPhone;
 
+    @NotNull(message="省份不能为空")
     private String province;
 
+    @NotNull(message="城市不能为空")
     private String city;
 
+    @NotNull(message="所在区不能为空")
     private String district;
 
+    @NotNull(message="具体地址不能为空")
     private String details;
 
+    @NotNull(message="邮编不能为空")
     private String postcode;
 
+    @NotNull(message="是否默认地址不能为空")
     private Integer isDefault;
 
     private Date createTime;

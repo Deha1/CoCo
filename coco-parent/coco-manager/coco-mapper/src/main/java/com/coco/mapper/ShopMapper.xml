@@ -81,4 +81,25 @@
       shop_pic = #{shopPic,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <!--通过商店名模糊查询-->
+  <select id="selectshopByname" parameterType="java.lang.String" resultType="com.coco.pojo.Shop">
+  select * from co_shop
+  where shop_name like  CONCAT(CONCAT('%',#{shopname}), '%');
+  </select>
+
+  <!--通过商店id获得商店名-->
+  <select id="selectByshopid" parameterType="java.lang.Integer" resultType="java.lang.String">
+    select shop_name from co_shop
+    where id = #{shopid}
+  </select>
+
+  <!--展示特定商店-->
+  <select id="selectByid"  resultType="com.coco.pojo.Shop">
+    select * from co_shop
+    where id =1,2,5,6,7,8,9;
+
+  </select>
+  <select id="findAllShop" resultType="com.coco.pojo.Shop">
+        select * from co_shop;
+    </select>
 </mapper>

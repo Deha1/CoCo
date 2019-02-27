@@ -14,4 +14,10 @@ public interface UserInfoMapper {
     int updateByPrimaryKeySelective(UserInfo record);
 
     int updateByPrimaryKey(UserInfo record);
+
+    public UserInfo findUserInfoById(int user_id);
+
+    public void InsertUserInfo(int id);
+
+    public void updateUserInfo(UserInfo userInfo);
 }

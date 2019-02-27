@@ -9,9 +9,11 @@ public interface GoodsKindMapper {
 
     int insertSelective(GoodsKind record);
 
-    GoodsKind selectByPrimaryKey(Long id);
+    GoodsKind selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(GoodsKind record);
 
     int updateByPrimaryKey(GoodsKind record);
+    String selectkindneam(Integer id);
+
 }

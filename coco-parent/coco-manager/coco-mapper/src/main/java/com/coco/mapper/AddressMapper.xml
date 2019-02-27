@@ -40,15 +40,15 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.coco.pojo.Address" >
-    insert into co_address (id, user_id, receiver_username, 
-      receiver_phone, province, city, 
-      district, details, postcode, 
+    insert into co_address (id, user_id, receiver_username,
+      receiver_phone, province, city,
+      district, details, postcode,
       is_default, create_time, update_time
       )
-    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{receiverUsername,jdbcType=VARCHAR}, 
-      #{receiverPhone,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR}, 
-      #{district,jdbcType=VARCHAR}, #{details,jdbcType=VARCHAR}, #{postcode,jdbcType=VARCHAR}, 
-      #{isDefault,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP}
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{receiverUsername,jdbcType=VARCHAR},
+      #{receiverPhone,jdbcType=VARCHAR}, #{province,jdbcType=VARCHAR}, #{city,jdbcType=VARCHAR},
+      #{district,jdbcType=VARCHAR}, #{details,jdbcType=VARCHAR}, #{postcode,jdbcType=VARCHAR},
+      #{isDefault,jdbcType=INTEGER}, now(), now()
       )
   </insert>
   <insert id="insertSelective" parameterType="com.coco.pojo.Address" >
@@ -132,7 +132,7 @@
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.coco.pojo.Address" >
     update co_address
-    <set >
+    <set>
       <if test="userId != null" >
         user_id = #{userId,jdbcType=INTEGER},
       </if>
@@ -164,7 +164,7 @@
         create_time = #{createTime,jdbcType=TIMESTAMP},
       </if>
       <if test="updateTime != null" >
-        update_time = #{updateTime,jdbcType=TIMESTAMP},
+        update_time = now(),
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
@@ -181,7 +181,13 @@
       postcode = #{postcode,jdbcType=VARCHAR},
       is_default = #{isDefault,jdbcType=INTEGER},
       create_time = #{createTime,jdbcType=TIMESTAMP},
-      update_time = #{updateTime,jdbcType=TIMESTAMP}
+      update_time = now()
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <select id="checkAddressByUserId" resultMap="BaseResultMap" parameterType="map">
+    SELECT
+    <include refid="Base_Column_List" />
+    from co_address
+    where user_id=#{userId}
+  </select>
 </mapper>

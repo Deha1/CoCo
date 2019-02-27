@@ -16,6 +16,37 @@
       <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
     </constructor>
   </resultMap>
+  <resultMap id="Goods" type="com.coco.pojo.Goods">
+    <!-- 配置映射的用户信息 -->
+    <id column="id" property="id"/>
+    <result column="kind_id" property="kindId"/>
+    <result column="name" property="name"/>
+    <result column="price" property="price"/>
+    <result column="shop_id" property="shopId"/>
+    <result column="subtitle" property="subtitle"/>
+    <result column="detail" property="detail"/>
+    <result column="num" property="num"/>
+    <result column="top_show" property="topShow"/>
+    <result column="status" property="status"/>
+    <!-- 配置映射的种类信息 -->
+    <association property="goodsKind" javaType="com.coco.pojo.GoodsKind">
+      <id column="id" property="id"/>
+      <result column="name" property="name"/>
+    </association>
+    <!-- 配置映射的商铺信息 -->
+    <association property="shop" javaType="com.coco.pojo.Shop">
+      <id column="id" property="id"/>
+      <result column="shop_name" property="shopName"/>
+      <result column="shop_pic" property="shopPic"/>
+      <result column="shop_dis" property="shopDis"/>
+    </association>
+    <!-- 配置映射的图片信息 -->
+    <collection property="goodsPic" ofType="com.coco.pojo.GoodsPic">
+      <id column="id" property="id"/>
+      <result column="goods_id" property="goodsId"/>
+      <result column="url" property="url"/>
+    </collection>
+  </resultMap>
   <resultMap id="ResultMapWithBLOBs" type="com.coco.pojo.Goods" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
@@ -217,4 +248,38 @@
       update_time = #{updateTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  <!--通过商品名模糊查询-->
+  <select id="selectByname" parameterType="java.lang.String" resultType="com.coco.pojo.Goods">
+  select * from co_goods
+  where name like  CONCAT(CONCAT('%',#{name}), '%');
+  </select>
+
+  <!--通过商店id查商品-->
+  <select id="selectByshopid" parameterType="java.lang.Integer" resultType="com.coco.pojo.Goods">
+    select
+    <include refid="Base_Column_List" />
+    from co_goods
+    where shop_id = #{shopid}
+  </select>
+  <!--通过分类id查询商品-->
+  <select id="selectBykind" parameterType="java.lang.Integer" resultType="com.coco.pojo.Goods">
+    select
+    <include refid="Base_Column_List" />
+    from co_goods
+    where kind_id = #{kindid}
+  </select><select id="findGoodbyId" resultType="com.coco.pojo.Goods" parameterType="int">
+        select * from co_goods where shop_id=#{shop_id};
+    </select>
+
+  <select id="findshopId" resultType="com.coco.pojo.Goods" parameterType="Integer">
+        select * from co_goods where id=#{id};
+    </select>
+
+  <select id="selectGoods" resultMap="Goods" parameterType="int">
+        select co_goods.*,co_goods_kind.*,co_goods_pic.*,co_shop.*
+        from co_goods,co_goods_kind,co_goods_pic,co_shop
+        where co_goods.id=#{id} and co_goods.kind_id=co_goods_kind.id and co_goods_pic.goods_id=co_goods.id and co_goods.shop_id=co_shop.id;
+    </select>
+
+
 </mapper>

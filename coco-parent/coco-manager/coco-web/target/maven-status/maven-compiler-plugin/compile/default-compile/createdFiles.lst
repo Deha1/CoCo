@@ -1,1 +1,10 @@
+com\coco\controller\GoodsDetailsController.class
+com\coco\controller\FindFootsController.class
+com\coco\controller\PictureChooseController.class
+com\coco\controller\GoodsController.class
+com\coco\controller\UserController.class
+com\coco\controller\KyExpireFilter.class
+com\coco\controller\DeleteFootsConroller.class
+com\coco\controller\UserInfoController.class
+com\coco\controller\ShopCarController.class
 com\coco\controller\OrderController.class

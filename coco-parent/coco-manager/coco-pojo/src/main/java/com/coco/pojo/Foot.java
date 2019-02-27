@@ -2,7 +2,7 @@ package com.coco.pojo;
 
 import java.util.Date;
 
-public class Foot {
+public class Foot implements Comparable<Foot> {
     private Integer id;
 
     private Integer userId;
@@ -63,5 +63,14 @@ public class Foot {
 
     public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
+    }
+
+    @Override
+    public int compareTo(Foot o) {
+        long key = this.updateTime.getTime()-o.getUpdateTime().getTime();
+        if(key>0){
+            return -1;
+        }
+        return 1;
     }
 }

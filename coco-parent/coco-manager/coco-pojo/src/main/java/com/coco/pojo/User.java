@@ -1,20 +1,30 @@
 package com.coco.pojo;
 
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import java.util.Date;
 
 public class User {
     private Integer id;
 
+    @NotNull(message="用户名不能为空")
     private String username;
-
+    @NotNull(message="密码不能为空")
+    @Length(min=6, max=12, message = "密码长度必须为6-12位")
+    @Pattern(regexp = "^[A-Za-z0-9]+$")
     private String password;
-
+    @NotNull(message="手机号不能为空")
+    @Length(min=11, max=11, message = "手机号长度必须为11位")
     private String phone;
-
+    @NotNull(message="邮箱不能为空")
+    @Email(regexp = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$")
     private String email;
-
+    @NotNull(message="密保问题不能为空")
     private String question;
-
+    @NotNull(message="密保答案不能为空")
     private String answer;
 
     private Integer role;

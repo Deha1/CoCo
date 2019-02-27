@@ -2,6 +2,8 @@ package com.coco.mapper;
 
 import com.coco.pojo.Address;
 
+import java.util.List;
+
 public interface AddressMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -16,4 +18,7 @@ public interface AddressMapper {
     int updateByPrimaryKeySelective(Address record);
 
     int updateByPrimaryKey(Address record);
+
+    List<Address> checkAddressByUserId(Integer userId);
+
 }

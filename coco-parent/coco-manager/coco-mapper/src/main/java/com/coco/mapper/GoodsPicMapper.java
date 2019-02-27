@@ -16,4 +16,7 @@ public interface GoodsPicMapper {
     int updateByPrimaryKey(GoodsPic record);
 
     String  findPic(Integer Id);
+
+    //通过商品id查他的图片
+    String selectpicByid(Integer id);
 }

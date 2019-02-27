@@ -2,6 +2,7 @@ package com.coco.pojo;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class Goods {
     private Integer id;
@@ -28,7 +29,9 @@ public class Goods {
 
     private String detail;
 
-    private GoodsPic goodsPic;
+    private GoodsKind goodsKind;
+    private List<GoodsPic> goodsPic;
+    private Shop shop;
 
     public Goods(Integer id, Integer kindId, Integer shopId, String name, String subtitle, BigDecimal price, Integer num, Integer status, Integer topShow, Date createTime, Date updateTime, String detail) {
         this.id = id;
@@ -145,4 +148,26 @@ public class Goods {
         this.detail = detail == null ? null : detail.trim();
     }
 
+    public GoodsKind getGoodsKind() {
+        return goodsKind;
+    }
+
+    public void setGoodsKind(GoodsKind goodsKind) {
+        this.goodsKind = goodsKind;
+    }
+
+    public List<GoodsPic> getGoodsPic() {
+        return goodsPic;
+    }
+    public void setGoodsPic(List<GoodsPic> goodsPic) {
+        this.goodsPic = goodsPic;
+    }
+
+    public Shop getShop() {
+        return shop;
+    }
+
+    public void setShop(Shop shop) {
+        this.shop = shop;
+    }
 }

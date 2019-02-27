@@ -1,3 +1,4 @@
+com\coco\mapper\ItemMapper.class
 com\coco\mapper\GoodsMapper.class
 com\coco\mapper\UserInfoMapper.class
 com\coco\mapper\GoodsKindMapper.class

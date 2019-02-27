@@ -90,4 +90,32 @@
     delete from co_shop_car
     where user_id = #{id,jdbcType=INTEGER}
   </delete>
+  <insert id="addShopCar" parameterType="com.coco.pojo.ShopCar">
+
+  insert co_shop_car(user_id,shop_id,goods_id,num,checked,create_time,update_time)
+  values(#{userId},#{shopId},#{goodsId},#{num},#{checked},now(),now());
+  </insert>
+
+  <select id="findShopCarGoods" resultType="com.coco.pojo.ShopCar">
+        select * from co_shop_car;
+    </select>
+
+  <update id="updataShopCar" parameterType="com.coco.pojo.ShopCar">
+       update co_shop_car set num=#{num},update_time=now() where id =#{id};
+    </update>
+  <delete id="deleteShopCarById" parameterType="int">
+        delete from co_shop_car where id=#{id};
+    </delete>
+
+  <select id="personShopCar" parameterType="int" resultType="com.coco.pojo.ShopCar">
+        select * from co_shop_car where user_id=#{userId};
+    </select>
+
+  <delete id="deleteAllShopCarByUserId" parameterType="int">
+        delete from co_shop_car where user_id=#{userId};
+    </delete>
+
+  <select id="findaShopCar" resultType="com.coco.pojo.ShopCar" parameterType="map" >
+        select * from co_shop_car where goods_id=#{goodsId} and shop_id=#{shopId} and user_id=#{userId};
+    </select>
 </mapper>
